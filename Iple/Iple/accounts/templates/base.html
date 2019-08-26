@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">	
+    {% block head %}
+	<title>Base</title>
+	{% endblock %}
+</head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/barra.css' %}">	
+	<nav>
+		<ul class="menu">
+			<li><a href="/account/register">Register</a></li>
+			</li>	
+        </ul>
+    </nav>
+
+
+
+	{% block body %}
+	   <h1>Base</h1>
+    {% endblock %}
+</body>
+</html>
